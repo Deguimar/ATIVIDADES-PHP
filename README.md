@@ -11,10 +11,14 @@ QUESTÃO 04 -  Crie uma página PHP que contenha uma calculadora simples. O usu�
 QUESTÃO 05 –  Utilizando o código desenvolvido no Trabalho Pratico II, faça a tratativa do formulário de feedback no PHP e exiba em tela os dados coletados do usuário.
 
 QUESTÃO 06 -  utilizando o Trabalho Prático III realize as seguintes ações:
+
 • Ao salvar um post, grave suas informações no banco. - INSERT
 • Ao curtir uma publicação marque-a como curtida no banco de dados 
+
 (coluna curtida 0 = Não, 1 = Sim). – UPDATE
+
 • Ao excluir uma publicação, exclua-a do banco. – DELETE
+
 • Ao carregar a página, se houver publicações salvas, exiba-as em tela -
 
 SELECT
@@ -22,8 +26,8 @@ ESQUEMA DO BANCO
 CREATE DATABASE IF NOT EXISTS xuitter_db;
 USE xuitter_db;
 CREATE TABLE IF NOT EXISTS publicacoes (
- id INT AUTO_INCREMENT PRIMARY KEY,
- texto VARCHAR (255) NOT NULL,
- data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
- curtida BOOLEAN DEFAULT FALSE
+id INT AUTO_INCREMENT PRIMARY KEY,
+texto VARCHAR (255) NOT NULL,
+data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+curtida BOOLEAN DEFAULT FALSE
 );
